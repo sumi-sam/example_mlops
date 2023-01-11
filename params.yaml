@@ -1,6 +1,6 @@
 base:
   project: mlops-insurance
-  random_state: 20
+  random_state: 42
   target_col: charges
 
 data_source:
