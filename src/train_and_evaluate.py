@@ -13,7 +13,7 @@ import numpy as np
 
 def eval_metrics(actual,predicted):
     rmse=np.sqrt(mean_squared_error(actual,predicted))
-    mae=mean_squared_error(actual,predicted)
+    mae=mean_absolute_error(actual,predicted)
     r2=r2_score(actual,predicted)
     return rmse,mae,r2
 
@@ -43,9 +43,9 @@ def train_and_evaluate(config_path):
     predicted_qualities=lr.predict(Test_x)
 
     (rmse,mae,r2)=eval_metrics(Test_y,predicted_qualities)
-    # print('RMSE=%s',rmse)
-    # print('mae=%s',mae)
-    # print('R2=%s',r2)
+    print('RMSE=',rmse)
+    print('mae=',mae)
+    print('R2=',r2)
     score_file=config["reports"]["scores"]
     params_file=config["reports"]["params"]
 
