@@ -14,3 +14,4 @@ jupyterlab
 scikit-learn
 argparse
 mlflow
+urllib
