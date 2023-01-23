@@ -8,10 +8,10 @@ python-dotenv>=0.5.1
 pandas
 numpy
 matplotlib
-# boto3
+boto3
 dvc
-jupyterlab
+# jupyterlab
 scikit-learn
 argparse
 mlflow
-urllib
+# urllib not required automatically installed
